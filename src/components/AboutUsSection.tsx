@@ -5,15 +5,15 @@ import aboutusimg from "../../public/aboutusimg.jpg";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className=" mx-auto px-6 md:px-8 grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
+    <section className="md:py-20 py-10 bg-white">
+      <div className=" mx-auto px-6 md:px-8 grid md:grid-cols-2 grid-cols-1 md:gap-12 gap-5 items-center">
         <div>
-          <p className="text-orange-500 font-semibold uppercase tracking-wider mb-2">
+          <p className="text-[#1da1f2] font-semibold uppercase tracking-wider ">
             About Us
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Company Overview:{" "}
-            <span className="text-gray-900 underline decoration-blue-500">
+            <span className="text-gray-900 underline decoration-[#1da1f2]">
               Vertex Markets
             </span>
           </h2>

@@ -14,8 +14,8 @@ function TopNav() {
         Securities market investments carry inherent risks. Please review all
         relevant documents thoroughly before making any investment decisions.
       </marquee>
-      <h2 className="text-white text-sm font-normal md:ml-3 ">
-        vertexmarkets2025@gmail.com
+      <h2 className="text-white text-sm font-normal md:ml-3 whitespace-nowrap">
+        +91 9211725852
       </h2>
     </div>
   );

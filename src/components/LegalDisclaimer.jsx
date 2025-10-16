@@ -3,12 +3,12 @@ import React from "react";
 function LegalDisclaimer() {
   return (
     <div>
-      <div className="bg-[#fef7e5] p-10">
-        <p className="text-orange-500 font-semibold uppercase tracking-wider mb-2">
+      <div className="bg-[#fef7e5] md:p-10 p-7">
+        <p className="text-[#1da1f2] font-semibold uppercase tracking-wider mb-2">
           Legal Disclaimer
         </p>
 
-        <p className="text-gray-600 leading-relaxed mb-4">
+        <p className="text-gray-600 leading-relaxed mb-4 md:text-base text-sm">
           Vertex Markets offers investment research and advisory services. The
           insights and recommendations we provide are based on reliable sources
           and comprehensive analysis.

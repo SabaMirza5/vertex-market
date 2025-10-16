@@ -4,10 +4,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 
 function Testimonials() {
@@ -32,33 +31,40 @@ function Testimonials() {
       img: "../../public/student3.jpg",
       text: "Vertex Markets has been instrumental in helping me build a solid investment plan. Their team is responsive, transparent, and genuinely cares about client success.",
     },
+     
   ];
 
   return (
-    <section className="py-20 bg-white ">
-      <h2 className="text-center text-3xl font-bold text-blue-700 mb-12">
+    <section className="md:py-20 py-10 bg-white ">
+      <h2 className="text-center md:text-3xl text-2xl font-bold text-[#1da1f2]">
         What Our Clients Say
       </h2>
 
       <div className="relative overflow-visible max-w-7xl mx-auto px-4">
         <Swiper
-          spaceBetween={15}
+          // spaceBetween={15}
           centeredSlides={true}
           loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+         
           navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="testimonial-swiper"
+          modules={[Autoplay, Navigation]}
+          className="testimonial-swiper  md:py-12 py-7  "
           breakpoints={{
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+           320: {       
+      slidesPerView: 1.5,
+      spaceBetween: 5,
+    },
+            768: { slidesPerView: 2,
+              spaceBetween: 15,
+             },
+            1024: { slidesPerView: 3,
+              spaceBetween: 15,
+             },
+             
           }}
         >
           {slides.map((item, index) => (
@@ -71,19 +77,19 @@ function Testimonials() {
                       : "scale-90 opacity-80"
                   } bg-[#052365] rounded-2xl overflow-hidden text-white`}
                 >
-                  <div className="flex flex-col items-center py-10 px-6 bg-[#052365]">
+                  <div className="flex flex-col items-center md:py-10 py-5 md:px-6 px-3 bg-[#052365]">
                     <img
                       src={item.img}
                       alt={item.name}
                       className={`w-24 h-24 rounded-full border-4 border-white mb-3 object-cover ${
-                        isActive ? "ring-4 ring-yellow-400" : ""
+                        isActive ? "ring-4 ring-[#1da1f2]" : ""
                       }`}
                     />
-                    <h3 className="text-lg font-semibold">{item.name}</h3>
-                    <div className="flex text-yellow-400 mb-2">{"★★★★★"}</div>
+                    <h3 className="md:text-lg text-sm font-semibold">{item.name}</h3>
+                    <div className="flex text-[#1da1f2] md:mb-2 mb-0">{"★★★★★"}</div>
                   </div>
-                  <div className="bg-white text-gray-700 p-6 text-center min-h-[160px]">
-                    <p className="text-sm leading-relaxed italic">
+                  <div className="bg-white text-gray-700 md:p-6 p-3 text-center min-h-[160px]">
+                    <p className="md:text-sm text-[9px] leading-relaxed italic">
                       "{item.text}"
                     </p>
                   </div>
