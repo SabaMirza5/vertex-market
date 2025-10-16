@@ -189,7 +189,7 @@ const Navbar = () => {
             )
           )}
 
-          <button className="bg-[#052365] w-full border border-[#2563eb] hover:bg-blue-900 text-white rounded-full py-2 px-5 capitalize">
+          <button onClick={() => setShowPopup(true)} className="bg-[#052365] w-full border border-[#2563eb] hover:bg-blue-900 text-white rounded-full py-2 px-5 capitalize">
             Contact Us
           </button>
         </div>

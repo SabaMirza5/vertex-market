@@ -1,8 +1,13 @@
-import React from "react";
+
+import React, { useState } from "react";
 import bgimg from "../../public/bgimg.jpg";
+import ContactUsPopup from "./ContactUsPopup";
 
 const HeroSection = () => {
+   const [showPopup, setShowPopup] = useState(false);
+  
   return (
+    <>
     <section
       className="relative bg-cover  bg-center h-[80vh] flex items-center justify-center text-center"
       style={{ backgroundImage: `url(${bgimg})` }}
@@ -24,7 +29,7 @@ const HeroSection = () => {
           results.
         </p>
 
-        <button className="bg-[#1da1f2] hover:bg-blue-600 text-white font-semibold md:py-2.5 py-1.5 px-12 rounded-full flex items-center justify-center mx-auto transition-all duration-300">
+        <button  onClick={() => setShowPopup(true)}  className="bg-[#1da1f2] hover:bg-blue-600 text-white font-semibold md:py-2.5 py-1.5 px-12 rounded-full flex items-center justify-center mx-auto transition-all duration-300">
           Get Started
           <span className="ml-2 text-lg">→</span>
         </button>
@@ -61,6 +66,9 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+
+ <ContactUsPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
+    </>
   );
 };
 
