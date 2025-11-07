@@ -5,7 +5,6 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll to top
     const scrollContainer = document.querySelector(".scrollable-content");
     if (scrollContainer) {
       scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
@@ -13,13 +12,12 @@ const ScrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    // Add animation to the main content container
     const pageContainer = document.querySelector(".page-transition");
     if (pageContainer) {
       pageContainer.classList.add("animate-pageFade");
       const timer = setTimeout(() => {
         pageContainer.classList.remove("animate-pageFade");
-      }, 500); // animation duration
+      }, 500); 
 
       return () => clearTimeout(timer);
     }

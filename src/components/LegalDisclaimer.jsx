@@ -9,22 +9,13 @@ function LegalDisclaimer() {
         </p>
 
         <p className="text-gray-600 leading-relaxed mb-4 md:text-base text-sm">
-          Vertex Markets offers investment research and advisory services. The
-          insights and recommendations we provide are based on reliable sources
-          and comprehensive analysis.
+        Vertex Markets provides investment research and advisory services grounded in credible data and in-depth analysis. Our insights and recommendations are designed to support informed investment decisions and strategic financial planning.
           <br />
           <br />
-          However, all investments carry inherent risks, and past performance is
-          not a guarantee of future outcomes. Vertex Markets makes no warranties
-          regarding the accuracy, completeness, or timeliness of the information
-          shared.
+         While we ensure accuracy and reliability in our research, all investments involve inherent risks, and past performance does not guarantee future outcomes. Vertex Markets makes no warranties regarding the completeness or timeliness of the information provided.
           <br />
           <br />
-          Clients are strongly encouraged to perform their own due diligence and
-          consult with qualified financial advisors before making any investment
-          decisions. Vertex Markets shall not be held responsible for any losses
-          or damages arising from the use of our services or reliance on our
-          recommendations.
+         Clients are strongly advised to conduct their own due diligence and seek guidance from qualified financial advisors before making investment decisions. Vertex Markets shall not be held responsible for any losses or damages resulting from the use or reliance on our services and recommendations.
         </p>
       </div>
     </div>

@@ -18,14 +18,17 @@ const AboutUsSection = () => {
             </span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            A market research and analysis firm focuses on collecting and
+            {/* A market research and analysis firm focuses on collecting and
             analyzing data related to markets, consumer behavior, competitors,
-            and industry developments.
+            and industry developments. */}
+
+            A market research and analysis firm specializes in gathering and interpreting data on markets, consumer behavior, competitors, and industry trends. 
           </p>
           <p className="text-gray-600 leading-relaxed">
-            These firms are essential in guiding businesses toward informed
+            {/* These firms are essential in guiding businesses toward informed
             decision-making by delivering valuable insights into market trends,
-            customer needs, and strategic growth opportunities.
+            customer needs, and strategic growth opportunities. */}
+            These insights help businesses make informed decisions, understand customer needs, and identify new opportunities for growth.
           </p>
         </div>
 

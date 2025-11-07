@@ -41,7 +41,6 @@ const Navbar = () => {
     <nav className="sticky top-0 z-40 bg-white text-black shadow-md backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-2 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <div>
             <img
               src={mainlogo}

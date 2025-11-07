@@ -15,7 +15,7 @@ const AboutPageSection = () => {
         </h1>
 
         <p className="text-gray-200 mb-8 text-lg">
-          We Turn Market Insights into Powerful Decisions
+       Transforming Market Intelligence into Strategic Action
         </p>
       </div>
     </section>
